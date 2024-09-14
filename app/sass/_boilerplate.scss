@@ -36,3 +36,9 @@ ul {
 li {
   text-decoration: none;
 }
+
+@media screen and (min-width: 750px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+}

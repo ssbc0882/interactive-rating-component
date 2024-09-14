@@ -100,3 +100,16 @@
   height: 42px;
   border-radius: 50%;
 }
+
+@media screen and (min-width: 750px) {
+  .rating {
+    &__number {
+      width: 51px;
+      height: 51px;
+    }
+
+    &__select {
+      font-size: 15px;
+    }
+  }
+}
