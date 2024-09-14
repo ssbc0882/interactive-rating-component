@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  margin-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background: linear-gradient(var(--black-gradient1) 0%, var(--black-gradient2) 100%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+p {
+  color: var(--light-grey);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+:root {
+  --dark-blue: hsl(213, 19%, 18%);
+  --light-grey: hsl(217, 12%, 63%);
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --black-gradient1: hsl(215, 20%, 17%);
+  --black-gradient2: hsl(216, 24%, 12%);
+  --number-fill: hsla(0, 0%, 59%, 20%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.rating {
+  max-width: 412px;
+  background-color: var(--dark-blue);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.rating__star {
+  background-color: var(--number-fill);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-block-end: 30px;
+}
+.rating__description {
+  margin-block: 17px 24px;
+  letter-spacing: 0.7px;
+}
+.rating__number {
+  background-color: var(--number-fill);
+  color: var(--light-grey);
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+.rating__number:hover {
+  background-color: var(--orange);
+}
+.rating__thank-you {
+  margin: auto;
+  display: block;
+}
+.rating__select {
+  margin-block: 1.5rem;
+  color: var(--orange);
+}
+
+.rating__number.active {
+  background-color: var(--orange);
+  color: white;
+}
+
+.btn {
+  font-family: inherit;
+  color: var(--very-dark-blue);
+  background-color: var(--orange);
+  width: 100%;
+  font-size: 15px;
+  padding: 15px 8.5rem 11px;
+  margin-top: 26px;
+  border-radius: 1.4rem;
+  transition: background-color 0.2s ease-in;
+}
+.btn:hover {
+  background-color: var(--white);
+}
+
+.success {
+  text-align: center;
+  max-width: 412px;
+  background-color: var(--dark-blue);
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+.success__description {
+  margin-block: 17.5px 37px;
+}
+
+.hidden {
+  display: none;
+}
+
+.back-btn {
+  margin-bottom: 2rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+}/*# sourceMappingURL=styles.css.map */
